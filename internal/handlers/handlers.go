@@ -13,7 +13,7 @@ import (
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	http.ServeFile(w, r, "../index.html")
+	http.ServeFile(w, r, "index.html")
 }
 
 func UploadHandle(w http.ResponseWriter, r *http.Request) {
